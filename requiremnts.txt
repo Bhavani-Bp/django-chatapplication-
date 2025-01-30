@@ -1,0 +1,29 @@
+Django==4.2.5
+djangorestframework==3.14.0
+channels==4.0.0
+channels-redis==4.1.0
+asgiref==3.7.2
+python-dotenv==1.0.0
+sqlite3
+
+
+git clone <your-repo-url>
+cd <your-project-folder>
+
+# Create and activate a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run Django migrations
+python manage.py migrate
+
+# Start the Django development server
+python manage.py runserver
+
+
+git add requirements.txt
+git commit -m "Added requirements file"
+git push origin main
